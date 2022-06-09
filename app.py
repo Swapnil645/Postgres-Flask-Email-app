@@ -11,7 +11,7 @@ if ENV =='dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost/lexus'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ljtfytcoplwhdk:15bb40c98de5c47ace984259b75859c1d77021a7af28a1a8a5371f890a53e817@ec2-34-225-159-178.compute-1.amazonaws.com:5432/d4m7rtog7padc7'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ljtfytcoplwhdk:15bb40c98de5c47ace984259b75859c1d77021a7af28a1a8a5371f890a53e817@ec2-34-225-159-178.compute-1.amazonaws.com:5432/d4m7rtog7padc7'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
